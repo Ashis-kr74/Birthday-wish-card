@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #e6df8c, #dc99ee);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation: fadeInBody 2s ease-in;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  background-color: #63b7f0;
+  border-radius: 20px;
+  box-shadow: 0 30px 25px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+  opacity: 1;
+  animation: fadeInCard 2s ease forwards;
+}
+
+@keyframes fadeInCard {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.card-front h1 {
+  font-size: 2em;
+  color: #d63384;
+}
+
+.card-front p {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #0a1105;
+}
+
+.card-front button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card-front button:hover {
+  background-color: #b52e6f;
+}
+
+.card-inside {
+  display: none;
+  margin-top: 20px;
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.card-inside h2 {
+  color: #a61e4d;
+  margin-bottom: 10px;
+}
+
+.card-inside p {
+  font-size: 1.1em;
+  color: #000000;
+  margin-top: 10px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card hidden" id="birthdayCard">
+    <div class="card-front">
+      <h1>🎉 Happy Birthday <span id="personName">Friend</span>! 🎂</h1>
+      <p>Click to open your card</p>
+      <button onclick="openCard()">Open Card</button>
+    </div>
+    <div class="card-inside" id="cardInside">
+      <h2>Dear <span id="nameInside">Friend</span>,</h2>
+      <p>Wishing you a day filled with happiness and a year filled with joy.</p>
+      <p>— From Your Bestie 💖</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
